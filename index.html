@@ -233,8 +233,8 @@
     </div>
 
 <script>
-    const apiKey = "";
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+    // The API URL now points to our own serverless function, not directly to Google's API.
+    const apiUrl = '/api/generate'; // This will be the endpoint for our proxy function.
     const outputDiv = document.getElementById('planOutput');
     const responseTextDiv = document.getElementById('responseText');
     const sourcesDiv = document.getElementById('sourcesOutput');
