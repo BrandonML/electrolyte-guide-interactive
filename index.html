@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Athlete's Guide to Electrolyte Powders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#7a5195] to-[#ef5675]">The Athlete's Guide to Electrolytes</h1>
+            <p class="text-lg md:text-xl text-slate-600 mt-4 max-w-3xl mx-auto">Decoding the powder. A science-backed guide to choosing the right hydration supplement for peak performance and value.</p>
+        </header>
+
+        <main class="space-y-12">
+
+            <section id="core-four" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#003f5c] mb-2">The Core Four: Your Hydration All-Stars</h2>
+                <p class="text-slate-600 mb-8">For athletic performance, rehydration isn't just about water. It's about replenishing these four key electrolytes lost through sweat. Focus on products that prioritize these minerals in meaningful doses.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div class="bg-slate-50 border-l-4 border-[#ffa600] p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-[#003f5c]">Sodium</h3>
+                        <p class="text-5xl font-black text-[#ffa600] my-2">500-1000mg</p>
+                        <p class="text-sm text-slate-500">The most critical electrolyte for fluid balance, nerve function, and muscle contraction. Drives thirst and fluid absorption.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-[#ff764a] p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-[#003f5c]">Potassium</h3>
+                        <p class="text-5xl font-black text-[#ff764a] my-2">200-400mg</p>
+                        <p class="text-sm text-slate-500">Works with sodium to manage fluid levels, crucial for preventing cramps and supporting cardiovascular health.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-[#ef5675] p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-[#003f5c]">Magnesium</h3>
+                        <p class="text-5xl font-black text-[#ef5675] my-2">50-100mg</p>
+                        <p class="text-sm text-slate-500">Essential for energy production, muscle relaxation, and preventing cramps. Often under-dosed in formulas.</p>
+                    </div>
+                    <div class="bg-slate-50 border-l-4 border-[#bc5090] p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-[#003f5c]">Calcium</h3>
+                        <p class="text-5xl font-black text-[#bc5090] my-2">25-50mg</p>
+                        <p class="text-sm text-slate-500">Plays a role in muscle contractions and nerve signaling. Important, but needed in smaller amounts than other key players.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dosage" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#003f5c] mb-2">Dose is Everything: Optimal vs. Typical</h2>
+                <p class="text-slate-600 mb-8">Many popular electrolyte powders contain doses that are too low to be effective for athletes, especially for sodium and potassium. This chart shows the gap between what's common on the market versus what's scientifically recommended per serving for effective rehydration.</p>
+                <div class="chart-container">
+                    <canvas id="dosageChart"></canvas>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <section id="bioavailability" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-[#003f5c] mb-2">Bioavailability Matters</h2>
+                    <p class="text-slate-600 mb-6">The form of the mineral dictates how well your body can absorb and use it. Cheaper, less effective forms can lead to poor absorption and even digestive upset. Look for these high-quality forms on the ingredient list.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-600 mb-2">Look For These (High Absorption)</h3>
+                            <ul class="space-y-2 text-slate-700">
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Magnesium Glycinate, Citrate</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Potassium Citrate, Chloride</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Sodium Chloride, Citrate</li>
+                                <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Zinc Picolinate, Gluconate</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-red-600 mb-2">Avoid These (Poor Absorption)</h3>
+                            <ul class="space-y-2 text-slate-700">
+                                <li class="flex items-center"><span class="text-red-500 mr-2">✖</span> Magnesium Oxide, Sulfate</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">✖</span> Potassium Oxide</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">✖</span> Sodium Carbonate</li>
+                                <li class="flex items-center"><span class="text-red-500 mr-2">✖</span> Zinc Oxide</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="extras" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                    <h2 class="text-3xl font-bold text-[#003f5c] mb-2">Helpful vs. Hype</h2>
+                    <p class="text-slate-600 mb-6">Beyond the Core Four, some ingredients add value while others are just marketing noise. A small amount of glucose (sugar) actually helps speed up electrolyte and water absorption—a principle called co-transport.</p>
+                    <div class="chart-container h-48 sm:h-56">
+                        <canvas id="compositionChart"></canvas>
+                    </div>
+                    <div class="mt-6 flex justify-around text-sm text-center">
+                        <p><span class="font-bold block" style="color: #7a5195;">Core Electrolytes</span> The non-negotiables.</p>
+                        <p><span class="font-bold block" style="color: #ef5675;">Glucose (Sugar)</span> Aids absorption (3-5g).</p>
+                        <p><span class="font-bold block" style="color: #ffa600;">Vitamins/Other</span> Helpful but secondary.</p>
+                    </div>
+                </section>
+            </div>
+
+            <section id="buying-guide" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#003f5c] mb-2">Your 3-Step Buying Guide</h2>
+                <p class="text-slate-600 mb-8">Use this simple flowchart to quickly evaluate any electrolyte powder.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 text-center">
+                    <div class="p-4 bg-slate-50 rounded-lg shadow-sm w-full md:w-1/3">
+                        <div class="text-4xl font-black text-[#7a5195]">1</div>
+                        <h3 class="text-lg font-bold mt-2">Check the Core Four</h3>
+                        <p class="text-sm text-slate-500 mt-1">Does it have at least 500mg Sodium and 200mg Potassium? Prioritize these two above all.</p>
+                    </div>
+                    <div class="text-2xl text-slate-400 transform rotate-90 md:rotate-0">→</div>
+                    <div class="p-4 bg-slate-50 rounded-lg shadow-sm w-full md:w-1/3">
+                        <div class="text-4xl font-black text-[#ef5675]">2</div>
+                        <h3 class="text-lg font-bold mt-2">Inspect the Forms</h3>
+                        <p class="text-sm text-slate-500 mt-1">Are the minerals in a bioavailable form (e.g., citrate, glycinate)? Avoid oxides.</p>
+                    </div>
+                    <div class="text-2xl text-slate-400 transform rotate-90 md:rotate-0">→</div>
+                    <div class="p-4 bg-slate-50 rounded-lg shadow-sm w-full md:w-1/3">
+                        <div class="text-4xl font-black text-[#ffa600]">3</div>
+                        <h3 class="text-lg font-bold mt-2">Analyze the Extras</h3>
+                        <p class="text-sm text-slate-500 mt-1">Is it low in excessive sugar (>10g) and free of unnecessary fillers or artificial colors?</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recommendations" class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-[#003f5c] mb-2">Top Picks: Quality & Value</h2>
+                <p class="text-slate-600 mb-8">Based on the criteria above, here are products that deliver effective formulas at an affordable price point, generally under $1.50 per ounce. Prices are estimates and can vary.</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="py-3 px-4 bg-slate-100 font-bold uppercase text-sm text-slate-600 border-b border-slate-200">Product</th>
+                                <th class="py-3 px-4 bg-slate-100 font-bold uppercase text-sm text-slate-600 border-b border-slate-200 text-center">Sodium (mg)</th>
+                                <th class="py-3 px-4 bg-slate-100 font-bold uppercase text-sm text-slate-600 border-b border-slate-200 text-center">Potassium (mg)</th>
+                                <th class="py-3 px-4 bg-slate-100 font-bold uppercase text-sm text-slate-600 border-b border-slate-200 text-center">Magnesium (mg)</th>
+                                <th class="py-3 px-4 bg-slate-100 font-bold uppercase text-sm text-slate-600 border-b border-slate-200 text-center">Approx. Cost/Oz</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-700">
+                            <tr>
+                                <td class="py-3 px-4 border-b border-slate-200 font-semibold">BulkSupplements Electrolyte Powder</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">540</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">390</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">50</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center font-bold text-green-600">~$0.75</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-slate-200 font-semibold">Key Nutrients Electrolyte Powder</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">250</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">500</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">60</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center font-bold text-green-600">~$1.40</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-slate-200 font-semibold">Hi-Lyte Unflavored Concentrate</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">450</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">780</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">150</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center font-bold text-green-600">~$1.25</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 border-b border-slate-200 font-semibold">LMNT (Higher Cost, High Sodium)</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center font-black text-[#003f5c]">1000</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">200</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center">60</td>
+                                <td class="py-3 px-4 border-b border-slate-200 text-center font-bold text-orange-600">~$4.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <p class="text-xs text-slate-500 mt-2">Note: LMNT is included as a popular high-sodium benchmark, though it exceeds the target price.</p>
+                </div>
+            </section>
+
+            <section id="fuel-generator" class="bg-white rounded-lg shadow-md p-6 md:p-8 border-2 border-[#ff764a]">
+                <h2 class="text-3xl font-bold text-[#ff764a] mb-2">Custom Performance Fuel Generator ✨</h2>
+                <p class="text-slate-600 mb-8">Get a science-backed, personalized fueling plan. Input your specific activity details, and our AI sports nutritionist will provide optimal electrolyte and carbohydrate recommendations.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <input type="text" id="activity" placeholder="Activity (e.g., Marathon Run, Gym Session)" class="p-3 border border-slate-300 rounded-lg focus:ring-[#7a5195] focus:border-[#7a5195]">
+                    <input type="text" id="duration" placeholder="Duration (e.g., 4 hours, 60 minutes)" class="p-3 border border-slate-300 rounded-lg focus:ring-[#7a5195] focus:border-[#7a5195]">
+                    <select id="environment" class="p-3 border border-slate-300 rounded-lg focus:ring-[#7a5195] focus:border-[#7a5195] bg-white">
+                        <option value="">Select Environment...</option>
+                        <option value="Hot and Humid">Hot and Humid (High Sweat)</option>
+                        <option value="Cold and Dry">Cold and Dry (Lower Sweat)</option>
+                        <option value="Temperate Indoors">Temperate / Indoors</option>
+                        <option value="High Altitude">High Altitude</option>
+                    </select>
+                </div>
+
+                <button onclick="generateFuelPlan()" class="w-full bg-gradient-to-r from-[#7a5195] to-[#ef5675] text-white font-bold py-3 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-[1.01]">
+                    Generate Fuel Plan ✨
+                </button>
+
+                <div id="loadingIndicator" class="text-center mt-6 hidden">
+                    <div class="animate-spin inline-block w-8 h-8 border-4 border-t-4 border-gray-200 border-t-[#ef5675] rounded-full"></div>
+                    <p class="text-sm text-slate-500 mt-2">Analyzing data and generating personalized plan...</p>
+                </div>
+
+                <div id="planOutput" class="mt-6 p-4 bg-slate-50 border-l-4 border-[#7a5195] rounded-lg hidden">
+                    <h3 class="text-xl font-bold text-[#003f5c] mb-2">Your Tailored Fuel Plan</h3>
+                    <div id="responseText" class="text-slate-700"></div>
+                    <div id="sourcesOutput" class="mt-4 text-xs text-slate-500 border-t pt-2"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-12 py-6 border-t border-slate-200">
+            <p class="text-sm text-slate-500">This guide is for informational purposes only and does not constitute medical advice. Consult with a healthcare professional before starting any new supplement regimen.</p>
+        </footer>
+    </div>
+
+<script>
+    const apiKey = "";
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+    const outputDiv = document.getElementById('planOutput');
+    const responseTextDiv = document.getElementById('responseText');
+    const sourcesDiv = document.getElementById('sourcesOutput');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+
+    const fetchGeminiResponse = async (payload) => {
+        let attempts = 0;
+        const maxAttempts = 3;
+        const baseDelay = 1000;
+
+        while (attempts < maxAttempts) {
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.status === 429) {
+                    attempts++;
+                    const delay = baseDelay * (2 ** (attempts - 1)) + Math.random() * 500;
+                    if (attempts < maxAttempts) {
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                    }
+                    continue;
+                }
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(`API call failed: ${response.status} - ${errorData.error?.message || response.statusText}`);
+                }
+
+                return await response.json();
+
+            } catch (error) {
+                console.error("Fetch error:", error.message);
+                if (attempts === maxAttempts - 1) throw error;
+                attempts++;
+                const delay = baseDelay * (2 ** attempts) + Math.random() * 500;
+                await new Promise(resolve => setTimeout(resolve, delay));
+            }
+        }
+    };
+
+    const generateFuelPlan = async () => {
+        const activity = document.getElementById('activity').value.trim();
+        const duration = document.getElementById('duration').value.trim();
+        const environment = document.getElementById('environment').value;
+
+        if (!activity || !duration || !environment) {
+            responseTextDiv.innerHTML = '<p class="text-red-600">Please fill out all fields (Activity, Duration, and Environment) to generate your plan.</p>';
+            outputDiv.classList.remove('hidden');
+            sourcesDiv.innerHTML = '';
+            return;
+        }
+
+        responseTextDiv.innerHTML = '';
+        sourcesDiv.innerHTML = '';
+        outputDiv.classList.add('hidden');
+        loadingIndicator.classList.remove('hidden');
+
+        const systemPrompt = "You are a sports science nutritionist specializing in ultra-endurance athlete hydration and fueling. Provide a highly specific and brief fueling and electrolyte recommendation based on the user's activity context. Your response must be concise and actionable, focusing on the core electrolytes (Sodium, Potassium, Magnesium) and carbohydrate dosage. DO NOT include any introductory or concluding remarks (e.g., 'Based on your input...' or 'Good luck with your activity.'). Just provide the key points.";
+        const userQuery = `Generate an optimal per-hour fuel plan for an activity: ${activity}, lasting ${duration}, in a ${environment} environment.`;
+
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            tools: [{ "google_search": {} }],
+            systemInstruction: {
+                parts: [{ text: systemPrompt }]
+            },
+        };
+
+        try {
+            const result = await fetchGeminiResponse(payload);
+
+            const candidate = result.candidates?.[0];
+
+            if (candidate && candidate.content?.parts?.[0]?.text) {
+                const text = candidate.content.parts[0].text;
+                responseTextDiv.innerHTML = formatResponse(text);
+
+                let sources = [];
+                const groundingMetadata = candidate.groundingMetadata;
+                if (groundingMetadata && groundingMetadata.groundingAttributions) {
+                    sources = groundingMetadata.groundingAttributions
+                        .map(attribution => ({
+                            uri: attribution.web?.uri,
+                            title: attribution.web?.title,
+                        }))
+                        .filter(source => source.uri && source.title);
+                }
+
+                if (sources.length > 0) {
+                    sourcesDiv.innerHTML = '<strong>Sources:</strong> ' + sources.map((s, i) =>
+                        `<a href="${s.uri}" target="_blank" class="text-blue-500 hover:underline">${s.title}</a>`
+                    ).join(', ');
+                } else {
+                    sourcesDiv.innerHTML = 'No external sources cited for this response.';
+                }
+
+                outputDiv.classList.remove('hidden');
+
+            } else {
+                responseTextDiv.innerHTML = '<p class="text-red-600">Sorry, I could not generate a plan. Please try different inputs.</p>';
+                outputDiv.classList.remove('hidden');
+            }
+
+        } catch (error) {
+            responseTextDiv.innerHTML = `<p class="text-red-600">An error occurred while generating the plan: ${error.message}.</p>`;
+            outputDiv.classList.remove('hidden');
+        } finally {
+            loadingIndicator.classList.add('hidden');
+        }
+    };
+
+    const formatResponse = (text) => {
+        // Simple markdown to HTML conversion for presentation
+        // Replace bold **text** with <strong>text</strong>
+        text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        // Replace list items starting with * or - with <ul><li>
+        text = text.replace(/(\*|\-)\s/g, '<li>');
+        // Wrap paragraphs in <p> tags and handle list structuring
+        const lines = text.split('\n').filter(line => line.trim() !== '');
+        let html = '';
+        let inList = false;
+
+        lines.forEach(line => {
+            if (line.startsWith('<li>')) {
+                if (!inList) {
+                    html += '<ul>';
+                    inList = true;
+                }
+                html += line;
+            } else {
+                if (inList) {
+                    html += '</ul>';
+                    inList = false;
+                }
+                html += `<p>${line}</p>`;
+            }
+        });
+        if (inList) {
+            html += '</ul>';
+        }
+        return html;
+    };
+
+    const wrapLabel = (label) => {
+        if (typeof label === 'string' && label.length > 16) {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > 16) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+        return label;
+    };
+
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        return Array.isArray(label) ? label.join(' ') : label;
+    };
+
+    const dosageData = {
+        labels: ['Sodium (mg)', 'Potassium (mg)', 'Magnesium (mg)'].map(wrapLabel),
+        datasets: [
+            {
+                label: 'Typical Dose in Products',
+                data: [250, 100, 25],
+                backgroundColor: '#bc5090',
+                borderColor: '#bc5090',
+                borderWidth: 1
+            },
+            {
+                label: 'Optimal Dose for Athletes',
+                data: [750, 300, 75],
+                backgroundColor: '#ff764a',
+                borderColor: '#ff764a',
+                borderWidth: 1
+            }
+        ]
+    };
+    new Chart(document.getElementById('dosageChart'), {
+        type: 'bar',
+        data: dosageData,
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Dosage per Serving (mg)' }
+                }
+            },
+            plugins: {
+                legend: { position: 'bottom' },
+                tooltip: { callbacks: { title: tooltipTitleCallback } }
+            }
+        }
+    });
+
+    const compositionData = {
+        labels: ['Core Electrolytes', 'Glucose (for absorption)', 'Optional Vitamins/Minerals'],
+        datasets: [{
+            label: 'Ideal Composition',
+            data: [80, 15, 5],
+            backgroundColor: ['#7a5195', '#ef5675', '#ffa600'],
+            hoverOffset: 4
+        }]
+    };
+    new Chart(document.getElementById('compositionChart'), {
+        type: 'doughnut',
+        data: compositionData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: { callbacks: { title: tooltipTitleCallback } }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>
