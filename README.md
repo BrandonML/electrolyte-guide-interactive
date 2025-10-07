@@ -2,7 +2,7 @@
 
 ![Screenshot of the Electrolyte Guide](./readme-screenshot.png)
 
-This repository contains the source code for [The Athlete's Buying Guide to Electrolyte Powders](https://brandonml.github.io/electrolyte-guide-interactive/), an interactive, single-page web application.
+This repository contains the source code for [The Athlete's Buying Guide to Electrolyte Powders](https://electrolyte-guide-interactive.vercel.app/), an interactive, single-page web application.
 
 The guide is designed to help athletes understand the science behind electrolyte supplements and make informed purchasing decisions. It features:
 
@@ -13,4 +13,4 @@ The guide is designed to help athletes understand the science behind electrolyte
 
 ## View the Live Guide
 
-You can view and interact with the live guide on [GitHub Pages](https://brandonml.github.io/electrolyte-guide-interactive/).
+You can view and interact with the live guide on [Vercel](https://electrolyte-guide-interactive.vercel.app/).
